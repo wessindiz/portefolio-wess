@@ -1,30 +1,41 @@
 <template>
   <div id="nav">
-    <router-link to="/">Home</router-link> |
-    <router-link to="/about">About</router-link>
+      <header :class="{ 'active':menuOpen }" class="header">
+        <div class="user">
+          <img src="@/assets/wess.jpeg" alt="wess">
+          <h3>Wesley ROSEMAIN</h3>
+          <p>Développeur Web</p>
+        </div>
+        <nav class="navbar">
+          <a href="/">Accueil</a>
+          <a href="/about">À propos</a>
+          <a href="#Services">Services</a>
+          <a href="#projects">Mes projets</a>
+          <a href="#contact">Contact</a>
+        </nav>
+      </header>
+
+      <!-- Menu Hamburger -->
+      <div v-on:click="menuOpen = !menuOpen" :class="{ 'fa-times':menuOpen }" id="menu-btn" class="fas fa-bars"></div>
+
+      <!-- Theme de l'app -->
+      <div v-on:click="dark = !dark" :class="{ 'fa-sun':dark }"  id="theme-toggler" class="fas fa-moon"></div>
+
   </div>
   <router-view/>
 </template>
 
-<style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-}
 
-#nav {
-  padding: 30px;
-}
 
-#nav a {
-  font-weight: bold;
-  color: #2c3e50;
-}
 
-#nav a.router-link-exact-active {
-  color: #42b983;
-}
-</style>
+<script>
+export default {
+  data(){
+    return{
+      menuOpen:false,
+      dark: false,
+    }
+  },
+} 
+</script>
+
