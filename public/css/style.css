@@ -573,6 +573,15 @@ section{
     #menu-btn{
         display: initial;
     }
+
+    .contact form {
+        box-shadow: var(--box-shadow);
+   }
+   
+   .contact form .box{
+        box-shadow: var(--box-shadow);
+
+   }
 }
 
 
@@ -589,4 +598,14 @@ section{
         width: 91%;
         border-right: 0;
     }
+
+    .contact form {
+        box-shadow: var(--box-shadow);
+
+   }
+   
+   .contact form .box{
+
+        box-shadow: var(--box-shadow);
+   }
 }    
