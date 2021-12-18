@@ -7,11 +7,11 @@
           <p>Développeur Web</p>
         </div>
         <nav class="navbar">
-          <a href="/">Accueil</a>
-          <a href="/about">À propos</a>
-          <a href="#Services">Services</a>
-          <a href="#projects">Mes projets</a>
-          <a href="#contact">Contact</a>
+          <router-link  to="/">Accueil</router-link>
+          <router-link  to="/about">À propos</router-link>
+          <router-link to="/competences">Compétences</router-link>
+          <router-link  to="/portfolio">Mes projets</router-link>
+          <router-link  to="/contact">Contact</router-link>
         </nav>
       </header>
 
@@ -19,7 +19,7 @@
       <div v-on:click="menuOpen = !menuOpen" :class="{ 'fa-times':menuOpen }" id="menu-btn" class="fas fa-bars"></div>
 
       <!-- Theme de l'app -->
-      <div v-on:click="dark = !dark" :class="{ 'fa-sun':dark }"  id="theme-toggler" class="fas fa-moon"></div>
+      <div v-on:click="changeTheme()" :class="{ 'fa-sun':dark, 'fa-moon':!dark }"  id="theme-toggler" class="fas"></div>
 
   </div>
   <router-view/>
@@ -36,6 +36,18 @@ export default {
       dark: false,
     }
   },
-} 
+  
+  methods:{ 
+    changeTheme(){
+      this.dark = !this.dark;
+      let themeToggler = document.querySelector('#theme-toggler');
+      if(themeToggler.classList.contains('fa-moon')){
+        document.body.classList.add('active');
+      }else if(themeToggler.classList.contains('fa-sun')){
+        document.body.classList.remove('active');
+      }
+    }
+  }
+}
 </script>
 
