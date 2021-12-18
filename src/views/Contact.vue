@@ -1,17 +1,18 @@
 <template>
-    <section class="contact" id="contact">
+  <section class="contact" id="contact">
+    <h1 class="heading"><span>Contactez</span>-moi</h1>
 
-        <h1 class="heading"><span>Contactez</span>-moi</h1>
+<div class="box-container">
+    <div class="box">
+      <i class="fas fa-phone-alt"></i>
+      <i class="fas fa-envelope"></i>
+      <i class="fas fa-map-marker-alt"></i>
+    </div>
 
-        <form action="">
-            <input type="text" placeholder="Votre nom" class="box">
-            <input type="email" placeholder="Votre email" class="box">
-            <input type="text" placeholder="Objet" class="box">
-            <textarea name=""  class="box" placeholder="Votre message" id="" cols="30" rows="10"></textarea>
-             <input type="submit" value="Envoyer" class="btn-submit">
-        </form>
+</div>
 
-        <div class="credits"> créé par <span>Wesley ROSEMAIN</span> | tous les droits sont réservés</div>
-
-    </section>
+    <div class="credits">
+      créé par <span>Wesley ROSEMAIN</span> | tous les droits sont réservés
+    </div>
+  </section>
 </template>
