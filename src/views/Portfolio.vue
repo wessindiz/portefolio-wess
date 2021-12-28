@@ -12,7 +12,7 @@
              </div>
 
              <div class="box">
-                 <img src="" alt="">
+                 <img src="../assets/Sugarbaby.png" alt="">
                  <div class="content">
                      <h3>Projet 02</h3>
                  </div>

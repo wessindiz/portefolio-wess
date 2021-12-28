@@ -1,5 +1,6 @@
 :root{
     --purple:#8607ed; 
+    --green: rgb(79, 148, 79);
     --black:#444;
     --light-color:#777;
     --bg-color:#dde1e7;
@@ -25,9 +26,7 @@
 }
 
 html{
-    font-size: 62,5%;
-    /* overflow: hidden; */
-    scroll-behavior: smooth;
+    scroll-behavior:smooth;
 }
 
 body{
@@ -48,7 +47,7 @@ body.active{
 
 section{
     min-height: 100vh;
-    padding: 2rem;
+    padding: 0 2rem;
 }
 
 .btn{
@@ -71,10 +70,11 @@ section{
 
 .heading{
     text-align: center;
-    font-size: 2.5rem;
+    font-size: 2.75rem;
     color: var(--black);
     text-transform: uppercase;
     padding-bottom: 1.5rem;
+    margin-top: 1rem;
 }
 
 .heading span{
@@ -82,6 +82,10 @@ section{
     text-transform: uppercase;
 }
 
+
+
+
+/* BARRE DE NAVIGATION / MENU */
 .header{
     position: fixed;
     top: 0; left: 0;
@@ -132,6 +136,7 @@ section{
     color: var(--purple);
 }
 
+/* menu hamburger */
 #menu-btn{
     position: fixed;
     z-index: 1000;
@@ -155,14 +160,16 @@ section{
     transition: 0s;
 }
 
+
+/* BOUTON THÈME */
 #theme-toggler{
     position: fixed;
     z-index: 1000;
     top: 1rem;
     right: 1rem;
-    height: 5rem;
-    width: 5rem;
-    line-height: 5rem;
+    height: 4rem;
+    width: 4rem;
+    line-height: 4rem;
     border-radius: 50%;
     font-size: 2rem;
     cursor: pointer;
@@ -176,6 +183,11 @@ section{
     color: var(--purple);
 }
 
+
+
+
+
+/* PAGE D'ACCUEIL */
 .home{
     display: flex;
     flex-flow: column;
@@ -250,6 +262,11 @@ section{
     box-shadow: var(--box-shadow-inset);
 }
 
+
+
+
+
+/* PAGE À PROPOS */
 .about .row{
     display: flex;
     align-items: center;
@@ -309,17 +326,26 @@ section{
     padding-top: 2rem;
 }
 
+.about .row .box-skills{
+    width: 100%;
+    display: flex;
+    border-radius: 1rem;
+    box-shadow: var(--box-shadow);
+}
+
 .about .row .progress{
     flex: 1 1 25rem;
 }
 
-.about .row .progress h3{
+.about .row .progress h3 {
     color: var(--black);
     font-weight: normal;
-    font-size: 1rem ;
+    font-size: 1rem;
     display: flex;
     align-items: center;
     justify-content: space-between;
+    margin: 2rem;
+    font-weight: 500;
 }
 
 .about .row .progress .bar{
@@ -327,13 +353,13 @@ section{
     border-radius: .5rem;
     height: 0.7rem;
     padding: .5rem;
-    margin:  1rem 0 ;
+    margin:  2rem ;
 }
 
 .about .row .progress .bar span{
     display: block;
     min-height: 100%;
-    background: var(--purple);
+    background: var(--green);
     border-radius: 5rem;
 }
 
@@ -356,6 +382,11 @@ section{
     width: 55%
 }
 
+
+
+
+
+/* PAGE COMPÉTENCES */
 .competences .box-container{
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(27rem, 1fr));
@@ -384,9 +415,9 @@ section{
 }
 
 .competences .box-container .box p{
-    font-size: .8rem;
+    font-size: .9rem;
     line-height: 1.8;
-    color: var(--light-color);
+    color:var(--black);
 }
 
 .competences .box-container .box::before{
@@ -407,7 +438,7 @@ section{
 }
 
 .competences .box-container .box:hover > *{
-    color: #fff ;
+    color: rgb(0, 0, 0) ;
 }
 
 .portfolio .box-container{
@@ -416,6 +447,11 @@ section{
     gap: 2rem;
 }
 
+
+
+
+
+/* PAGE MES PROJETS */
 .portfolio .box-container .box{
     height: 25rem;
      border-radius: .5rem;
@@ -462,30 +498,61 @@ section{
     opacity: 1;
 }
 
-.contact form {
-     margin: 1rem auto;
-     max-width: 60rem;
-     border-radius: .5rem;
-     box-shadow: var(--box-shadow);
-     padding: 2rem;
+
+
+
+
+/* PAGE CONTACT */
+
+.cntc{
+    height: 100vh;
+}
+.contact .row {
+     display: flex;
+     padding-top: 5rem;
+     margin: auto 0;
 }
 
-.contact form .box{
-     padding: 1rem .2rem;
-     width: 100%;
-     background: none;
-     color: var(--black);
-     font-size: 1rem;
-     text-transform: none;
-     margin: .7rem 0;
-     box-shadow: var(--box-shadow);
-     box-shadow: .5rem;
+.contact .row form{
+    box-shadow: var(--box-shadow);
+    border-radius: 1rem;
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem 2rem;
+    flex-wrap: wrap;
+    
+}
+
+.contact .row form .box{
+    box-shadow: var(--box-shadow);
+    border-radius: 1rem;
+    padding: 0 1rem;
+    margin: 1rem 0;
+    height: 3rem;
+    width: 40%;
+    font-size: .9rem;
+    color: var(--black);
+    text-transform: none;
+    
+}
+
+.contact .row form .box::placeholder{
+    text-transform: capitalize;
+    color: var(--light-color); 
+}
+
+.contact .row form .message{
+    padding: 1rem;
+    height: 10rem;
+    resize: none;
+    width: 100%;
 }
 
 .contact form textarea{
     height: 10rem;
     resize: none ;
 }
+
 
 .contact form .box:focus{
     box-shadow: var(--box-shadow-inset);
@@ -507,14 +574,48 @@ section{
     color: var(--purple);
     box-shadow: var(--box-shadow-inset);
 }
+ 
+.contact .row .content{
+    padding: 5rem 5rem;
+    box-shadow: var(--box-shadow);
+    border-radius: 1rem;
+}
 
-.credits{
+.contact .row .content .icons h3{
+    padding: 1rem 0;
     font-size: 1rem;
+    color: var(--purple);
+}
+
+.contact .row .content .icons h3 i{
+    padding-right: .5rem;
+
+}    
+
+.contact .row .content .icons p{
+    font-size: 1rem;
+    color: var(--light-color);
+}
+
+.contact .row .content .icons p a{
+    color: var(--light-color);
+}
+
+.contact .row .content .icons p a:hov{
+    color: var(--light-color);
+}
+
+
+
+
+
+.credits {
+    font-size: .7rem;
     text-align: center;
-    padding: 2.5rem 1rem;
-    margin-top: 1rem;
+    margin-top: 8rem;
     border-top: var(--border);
     color: var(--black);
+    padding: 0.5rem;
 }
 
 .credits span{
@@ -526,8 +627,8 @@ section{
 
 
 
-/* Media queries */
-@media(max-width:991px){
+/* Media queries TABLETTE */
+@media(max-width:1024px){
 
     html{
         font-size: 55%;
@@ -574,18 +675,88 @@ section{
         display: initial;
     }
 
+
+
+
+
+    /* PAGE A PORPOS */
+
+    .about .row .content h3 {
+        margin-top: 0rem;
+        font-size: 2rem;
+        color: var(--black);
+        line-height: 3;
+    }
+
+    .about .row .content p {
+        font-size: 1.8rem;
+        line-height: 2;
+    }
+
+    .contactMe {
+        font-size: 1.25rem;
+    }
+
+    .about .row .progress h3 {
+        font-size: 2rem;
+    }
+
+    .about .row .progress .bar {
+        height: 1rem;
+        padding: 0.5rem;
+        margin: 2rem;
+    }
+    .about .row {
+        margin-bottom: 2rem;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     .contact form {
         box-shadow: var(--box-shadow);
+    
    }
    
    .contact form .box{
         box-shadow: var(--box-shadow);
 
    }
+
+   .contact .row {
+    display: flow-root;
+    justify-content: space-between;
+    padding-top: 2rem;
+   }
+
+   .contact .row .content .icons h3 {
+    padding: 1rem 0;
+    font-size: 1.5rem;
+    color: var(--purple);
+    }
+
+    .contact .row .content .icons p{
+        font-size: 1.25rem;
+    }
+
 }
 
 
-/* Media queries */
+/* Media queries MOBILE */
 @media(max-width:450px){
 
     html{
@@ -599,6 +770,57 @@ section{
         border-right: 0;
     }
 
+
+    
+    
+    
+    /* PAGE A PORPOS */
+
+    .about .row .content h3 {
+        margin-top: 0rem;
+        font-size: 2rem;
+        color: var(--black);
+        line-height: 3;
+    }
+
+    .about .row .content p {
+        font-size: 1.6rem;
+        line-height: 2;
+    }
+
+    .contactMe {
+        font-size: 1.25rem;
+    }
+
+    .about .row .progress h3 {
+        font-size: 1.5rem;
+    }
+
+    .about .row .progress .bar {
+        height: 0.7rem;
+        padding: 0.5rem;
+        margin: 1rem;
+    }
+    .about .row {
+        margin-bottom: 2rem;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     .contact form {
         box-shadow: var(--box-shadow);
 
@@ -608,4 +830,17 @@ section{
 
         box-shadow: var(--box-shadow);
    }
+
+
+
+
+
+
+   .contact .row {
+    display: flow-root;
+    justify-content: space-between;
+    padding-top: 2rem;
+}
+
+
 }    

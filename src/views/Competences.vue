@@ -33,7 +33,7 @@
 
       <div class="box">
         <i class="fas fa-bullhorn"></i>
-        <h3>digital marketing</h3>
+        <h3>Développeur back-end</h3>
         <p>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas autem
           eligendi accusamus ducimus, vel rerum in sunt.
@@ -42,7 +42,7 @@
 
       <div class="box">
         <i class="fas fa-search-dollar"></i>
-        <h3>SEO marketing</h3>
+        <h3>Concepteur de BDD</h3>
         <p>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas autem
           eligendi accusamus ducimus, vel rerum in sunt.

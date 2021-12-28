@@ -7,11 +7,11 @@
           <p>Développeur Web</p>
         </div>
         <nav class="navbar">
-          <router-link  to="/">Accueil</router-link>
-          <router-link  to="/about">À propos</router-link>
-          <router-link to="/competences">Compétences</router-link>
-          <router-link  to="/portfolio">Mes projets</router-link>
-          <router-link  to="/contact">Contact</router-link>
+          <router-link  v-on:click="menuOpen = !menuOpen" to="/">Accueil</router-link>
+          <router-link v-on:click="menuOpen = !menuOpen" to="/about">À propos</router-link>
+          <router-link v-on:click="menuOpen = !menuOpen" to="/competences">Compétences</router-link>
+          <router-link v-on:click="menuOpen = !menuOpen" to="/portfolio">Mes projets</router-link>
+          <router-link v-on:click="menuOpen = !menuOpen" to="/contact">Contact</router-link>
         </nav>
       </header>
 
