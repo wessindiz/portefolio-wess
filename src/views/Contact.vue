@@ -1,5 +1,4 @@
 <template>
-<div class="cntc">
   <section class="contact" id="contact">
 
     <h1 class="heading"><span>Contactez</span>-moi</h1>
@@ -39,7 +38,6 @@
       créé par <span>Wesley ROSEMAIN</span> | tous les droits sont réservés
     </div>
   </section>
-  </div>
 </template>
 
 

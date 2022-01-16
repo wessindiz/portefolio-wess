@@ -30,6 +30,7 @@ html{
 }
 
 body{
+    scroll-behavior: smooth;
     background: var(--bg-color);
     padding-left: 25rem;
 }
@@ -318,7 +319,7 @@ section{
 
 .about .row .content p{
     font-size: 1rem;
-    color: var(--light-color);
+    color: var(--black);
     line-height: 1.8;
 }
 
@@ -774,28 +775,37 @@ section{
     
     
     
-    /* PAGE A PORPOS */
+    /* PAGE A HOME */
+    .home .content h3 {
+        font-size: 3.5rem;
+    }
 
+
+
+
+
+    /* PAGE A PORPOS */
+    
     .about .row .content h3 {
         margin-top: 0rem;
         font-size: 2rem;
         color: var(--black);
         line-height: 3;
     }
-
+    
     .about .row .content p {
         font-size: 1.6rem;
         line-height: 2;
     }
-
+    
     .contactMe {
         font-size: 1.25rem;
     }
-
+    
     .about .row .progress h3 {
         font-size: 1.5rem;
     }
-
+    
     .about .row .progress .bar {
         height: 0.7rem;
         padding: 0.5rem;
@@ -804,14 +814,23 @@ section{
     .about .row {
         margin-bottom: 2rem;
     }
+    
+    
+    
+    
+    
+    
+    
+    
+    /* PAGE COMPETENCES */
 
+    .competences .box-container .box h3 {
+        font-size: 1.5rem;
+    }
 
-
-
-
-
-
-
+    .competences .box-container .box p {
+        font-size: 1.25rem;
+    }
 
 
 

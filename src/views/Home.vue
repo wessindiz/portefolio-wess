@@ -5,7 +5,7 @@
             <h3>Wesley ROSEMAIN</h3>
             <p>Je suis développeur web</p>
 
-            <a href="cv.pdf" download="cv_wesley_rosemain" class="btn" target="blank">Télécharger CV</a>
+            <a href="cv.pdf" class="btn" target="blank">Télécharger CV</a>
             
         </div>
 
@@ -15,7 +15,6 @@
             <a href="https://www.linkedin.com/in/wesley-rosemain-b28838151/" class="fab fa-linkedin"></a>
             <a href="https://www.youtube.com/channel/UClvMufg6jreNMO6917_EnMw" class="fab fa-youtube"></a>
         </div>
-
     </section>
 
 </template>

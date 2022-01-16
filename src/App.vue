@@ -7,7 +7,7 @@
           <p>Développeur Web</p>
         </div>
         <nav class="navbar">
-          <router-link  v-on:click="menuOpen = !menuOpen" to="/">Accueil</router-link>
+          <router-link v-on:click="menuOpen = !menuOpen" to="/">Accueil</router-link>
           <router-link v-on:click="menuOpen = !menuOpen" to="/about">À propos</router-link>
           <router-link v-on:click="menuOpen = !menuOpen" to="/competences">Compétences</router-link>
           <router-link v-on:click="menuOpen = !menuOpen" to="/portfolio">Mes projets</router-link>
