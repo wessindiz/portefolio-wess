@@ -41,13 +41,14 @@
     <div class="row">
       <div class="box-skills">
         <div class="progress">
-          <h3>HTML <span>95%</span></h3>
+          <h3>HTML <span clas="progress-bar-striped">95%</span></h3>
           <div class="bar bar-1-1"><span></span></div>
           <h3>CSS <span>75%</span></h3>
           <div class="bar bar-1-2"><span></span></div>
           <h3>Javascript <span>55%</span></h3>
           <div class="bar bar-1-3"><span></span></div>
         </div>
+        
 
         <div class="progress">
           <h3>PHP/Symfony <span>51%</span></h3>

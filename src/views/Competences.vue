@@ -8,9 +8,7 @@
         <i class="fas fa-code"></i>
         <h3>web design</h3>
         <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas autem
-          eligendi accusamus ducimus, vel rerum in sunt
-        </p>
+          Le graphisme est une discipline qui consiste à créer, choisir et utiliser des éléments graphiques (dessins, caractères typographiques, photos, couleurs, etc.) pour élaborer un objet de communication et/ou de culture.</p>
       </div>
 
       <div class="box">

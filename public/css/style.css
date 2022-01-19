@@ -237,6 +237,12 @@ section{
    box-shadow: var(--box-shadow-inset);
    color: var(--insta);
 }
+
+.home .share .fa-envelope:hover{
+    box-shadow: var(--box-shadow-inset);
+    color: var(--facebook);
+ }
+
 .home .share .fa-linkedin:hover{
    box-shadow: var(--box-shadow-inset);
    color: var(--linkedin);
@@ -365,23 +371,54 @@ section{
 }
 
 .about .row .progress .bar-1-1 span{
-    width: 90%
+    width: 90%;
+    animation: load1 3s normal forwards;
 }
 .about .row .progress .bar-1-2 span{
-    width: 70%
+    width: 70%;
+      animation: load2 3s normal forwards;
 }
 .about .row .progress .bar-1-3 span{
-    width: 80%
+    width: 80%;
+      animation: load3 3s normal forwards;
 }
 .about .row .progress .bar-2-1 span{
-    width: 51%
+    width: 51%;
+      animation: load4 3s normal forwards;
 }
 .about .row .progress .bar-2-2 span{
-    width: 60%
+    width: 60%;
+      animation: load5 3s normal forwards;
 }
 .about .row .progress .bar-2-3 span{
-    width: 55%
+    width: 55%;
+      animation: load6 3s normal forwards;
 }
+
+@keyframes load1 {
+    0% { width: 0; }
+    90% { width: 90%; }
+  }
+@keyframes load2 {
+    0% { width: 0; }
+    70% { width: 70%; }
+  }
+@keyframes load3 {
+    0% { width: 0; }
+    80% { width: 80%; }
+  }
+@keyframes load4 {
+    0% { width: 0; }
+    51% { width: 51%; }
+  }
+@keyframes load5 {
+    0% { width: 0; }
+    60% { width: 60%; }
+  }
+@keyframes load6 {
+    0% { width: 0; }
+    55% { width: 55%; }
+  }
 
 
 
@@ -428,7 +465,7 @@ section{
     left: 0;
     height: 100%;
     width: 100%;
-    background: var(--purple);
+    background: goldenrod;
     z-index: -1;
     clip-path: circle(9rem at 0% 5%);
     transition: .3s linear ;
