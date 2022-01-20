@@ -520,6 +520,8 @@ section{
 
 .portfolio .box-container .box:hover .content{
     transform: scale(1);
+    background: linear-gradient(rgb(12, 12, 12), rgb(201, 201, 201));
+    opacity: .4;
 }
 
 .portfolio .box-container .box .content h3{
@@ -529,6 +531,7 @@ section{
     transform: translateY(-5rem);
     opacity: 0;
     transition-delay: .3s;
+
 }
 
 .portfolio .box-container .box:hover .content h3{ 

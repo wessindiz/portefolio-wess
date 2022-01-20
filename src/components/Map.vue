@@ -54,11 +54,6 @@ export default {
   mounted() {
     this.setupLeafletMap();
   },
-  watch: {
-    dark: function(){
-      mapDiv.remove();
-    }  
-  }
 };
 
 </script>

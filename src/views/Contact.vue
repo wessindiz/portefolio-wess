@@ -22,10 +22,13 @@
             <p>2, XXXXXXXX <br> 93200 Saint-Denis</p>
             </div>              
 
+
+
       </div>
 
       <div class="contentCarte">
-        <Map :dark="dark "/>
+        <Map v-if="dark" :dark="dark "/>
+        <Map v-else :dark="dark "/>
       </div>
 
     </div>
