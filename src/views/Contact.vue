@@ -9,7 +9,7 @@
 
             <div class="icons">
             <h3><i class="fas fa-phone-alt"></i>Téléphone</h3>
-            <p><a href="tel:+33663484450>">+3363484450</a></p>
+            <p><a href="tel:+33663484450>">+336XXXXXX50</a></p>
             </div>
 
             <div class="icons">
@@ -19,19 +19,15 @@
 
             <div class="icons">
             <h3><i class="fas fa-map-marker-alt"></i>Adresse</h3>
-            <p>2, Avenue du Dr. Lamaze <br> 93200 Saint-Denis</p>
-            </div>
+            <p>2, XXXXXXXX <br> 93200 Saint-Denis</p>
+            </div>              
 
-        </div>
+      </div>
 
-        <form action="">
-            <input type="text" class="box" placeholder="votre nom">
-            <input type="text" class="box" placeholder="Votre prénom">
-            <input type="email" class="box" placeholder="Votre email">
-            <input type="text" class="box" placeholder="Objet">
-            <textarea name="" id="" cols="30" rows="10" class="box message" placeholder="Votre message"></textarea>
-            <input type="submit" value="Envoyer" class="btn-submit">
-        </form>
+      <div class="contentCarte">
+        <Map :dark="dark "/>
+      </div>
+
     </div>
 
     <div class="credits">
@@ -40,4 +36,17 @@
   </section>
 </template>
 
+<script>
+import Map from '../components/Map.vue'
 
+export default {
+  components: {
+    Map,
+  },
+  props: {
+    dark: {
+      type: Boolean,
+    }
+  }
+}
+</script>

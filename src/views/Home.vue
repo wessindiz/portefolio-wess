@@ -16,6 +16,11 @@
             <a href="https://www.linkedin.com/in/wesley-rosemain-b28838151/" class="fab fa-linkedin"></a>
             <!-- <a href="https://www.youtube.com/channel/UClvMufg6jreNMO6917_EnMw" class="fab fa-youtube"></a> -->
         </div>
+        
     </section>
 
 </template>
+
+
+
+

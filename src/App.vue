@@ -22,7 +22,7 @@
       <div v-on:click="changeTheme()" :class="{ 'fa-sun':dark, 'fa-moon':!dark }"  id="theme-toggler" class="fas"></div>
 
   </div>
-  <router-view/>
+  <router-view :dark="dark" />
 </template>
 
 

@@ -19,7 +19,7 @@
              </div>
 
              <div class="box">
-                 <img src="" alt="">
+                 <img src="../assets/b&c.png" alt="">
                  <div class="content">
                      <h3>Projet 03</h3>
                  </div>
