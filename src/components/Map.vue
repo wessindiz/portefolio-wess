@@ -62,11 +62,34 @@ export default {
 
 <style>
 #mapContainer {
-    width : 400px;
-    height: 410px;
+    width : 100%;
+    height: 530px;
     margin-left: auto;
     margin-right: auto;
-    margin: 0.8em;
+    margin: 0.8em; 
     border-radius: 1rem;
+}
+
+@media(max-width:1024px){
+  #mapContainer {
+    width : 100%;
+    height: 500px;
+    margin-left: auto;
+    margin-right: auto;
+    margin: 0.8em; 
+    border-radius: 1rem;
+  }
+}
+
+
+@media(max-width:450px){
+  #mapContainer {
+    width : 100%;
+    height: 350px;
+    margin-left: auto;
+    margin-right: auto;
+    /* margin: 0.8em;  */
+    border-radius: 1rem;
+  }
 }
 </style>

@@ -25,12 +25,12 @@
                  </div>
              </div>
 
-             <div class="box">
+             <!-- <div class="box">
                  <img src="" alt="">
                  <div class="content">
                      <h3>Projet 04</h3>
                  </div>
-             </div>
+             </div> -->
 
          </div>
     </section>

@@ -5,7 +5,6 @@
             <h3>Wesley ROSEMAIN</h3>
             <p>Développeur web</p>
 
-            <!-- <a href="cv.pdf" class="btn" target="blank">Télécharger CV</a> -->
             
         </div>
 
