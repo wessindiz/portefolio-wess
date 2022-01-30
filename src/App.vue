@@ -6,12 +6,12 @@
           <h3>Wesley ROSEMAIN</h3>
           <p>Développeur Web</p>
         </div>
-        <nav class="navbar">
-          <router-link v-on:click="menuOpen = !menuOpen" to="/">Accueil</router-link>
-          <router-link v-on:click="menuOpen = !menuOpen" to="/about">À propos</router-link>
-          <router-link v-on:click="menuOpen = !menuOpen" to="/competences">Compétences</router-link>
-          <router-link v-on:click="menuOpen = !menuOpen" to="/portfolio">Mes projets</router-link>
-          <router-link v-on:click="menuOpen = !menuOpen" to="/contact">Contact</router-link>
+        <nav class="menu">
+          <router-link class="item" v-on:click="menuOpen = !menuOpen" to="/">Accueil</router-link>
+          <router-link class="item" v-on:click="menuOpen = !menuOpen" to="/about">À propos</router-link>
+          <router-link class="item" v-on:click="menuOpen = !menuOpen" to="/competences">Compétences</router-link>
+          <router-link class="item" v-on:click="menuOpen = !menuOpen" to="/portfolio">Mes projets</router-link>
+          <router-link class="item" v-on:click="menuOpen = !menuOpen" to="/contact">Contact</router-link>
         </nav>
       </header>
 

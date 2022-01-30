@@ -7,30 +7,40 @@
 
       <div class="content">
 
-            <div class="icons">
-            <h3><i class="fas fa-phone-alt"></i>Téléphone</h3>
-            <p><a href="tel:+33663484450>">+336XXXXXX50</a></p>
-            </div>
+        <h3>Mes coordonnées</h3>
 
-            <div class="icons">
-            <h3><i class="fas fa-envelope"></i>Email</h3>
-            <p><a href="mailto:wessrosemain@hotmail.fr">wessrosemain@hotmail.fr</a></p>
-            </div>
+        <div class="infos-contact">
+        
 
-            <div class="icons">
-            <h3><i class="fas fa-map-marker-alt"></i>Adresse</h3>
-            <p>2, XXXXXXXX <br> 93200 Saint-Denis</p>
-            </div>              
+         <div class="icons">
+            <i class="fas fa-mobile-alt"></i>
+            <h4>Téléphone</h4>
+            <p><a href="tel:+33663484450>">+33663484450</a></p>
+          </div>
 
+          <div class="icons">
+            <i class="fas fa-map-marker-alt"></i>
+            <h4>Adresse</h4>
+            <p>2, Avenue du Dr. LAMAZE <br> 93200 Saint-Denis</p>
+          </div>
+            
+           
 
+          <div class="icons">
+            <i class="far fa-paper-plane"></i>
+            <h4>Email</h4>
+            <!-- <p><a href="mailto:wessrosemain@hotmail.fr">wessrosemain@hotmail.fr</a></p> -->
+          </div>
 
-      </div>
+          </div>
+
+      
 
       <div class="contentCarte">
         <Map v-if="dark" :dark="dark "/>
         <Map v-else :dark="dark "/>
       </div>
-
+</div>
     </div>
 
     <div class="credits">

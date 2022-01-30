@@ -1,7 +1,10 @@
 :root{
+    --blue: #0077b6;
+    --pink: #ff758f;
+    --gold: #dda15e;
     --purple:#8607ed; 
     --green: rgb(79, 148, 79);
-    --black:#444;
+    --black:rgb(59, 59, 59);
     --light-color:#777;
     --bg-color:#dde1e7;
     --border:.1rem solid rgb(0,0,0,.2);
@@ -36,7 +39,9 @@ body{
 }
 
 body.active{
+
     --black:#fff;
+    --blue: #48cae4;
     --light-color:rgb(175, 175, 175);
     --bg-color:#222;
     --border:.1rem solid rgb(0,0,0,.4);
@@ -49,6 +54,8 @@ body.active{
 section{
     min-height: 100vh;
     padding: 0 2rem;
+    margin-right: 5em;
+
 }
 
 .btn{
@@ -120,11 +127,12 @@ section{
     font-size: 1.5rem;
 }
 
-.header .navbar{
+.header .menu{
     padding-top: 1rem;
 }
 
-.header .navbar a{
+.header .menu a{
+    text-decoration: none;
     display: block;
     margin: 1.5rem 0;
     padding: .7rem;
@@ -134,7 +142,7 @@ section{
     color: var(--black);
 }
 
-.header .navbar a:hover{
+.header .menu a:hover{
     box-shadow: var(--box-shadow-inset);
     /* font-weight:600; */
     color: var(--purple);
@@ -230,6 +238,7 @@ section{
    font-size: 2rem;
    color: var(--black);
    border-radius: .5rem;
+   text-decoration: none;
 }
 
 .home .share .fa-facebook-f:hover{
@@ -277,77 +286,43 @@ section{
 
 
 /* PAGE À PROPOS */
-.about .row{
-    display: flex;
-    align-items: center;
-    flex-wrap: wrap-reverse;
-    gap: 1rem;
+.about{
+    margin-bottom: 5em;
 }
 
-.about .row .box-container{
+.about .skills .box-skills{
     flex: 1 1 40rem;
-    display: flex;
-    gap: 1rem;
-    flex-wrap: wrap;
-}
-
-.about .row .box-container .box{
-    flex: 1 1 10rem;
-    text-align:center;
-    padding: 1rem;
-    border-radius: .5rem;
-    box-shadow: var(--box-shadow);
-}
-
-.about .row .box-container .box h3{
-    font-size: 1.75rem;
-    color: var(--black);
-    line-height: 1.1;
-}
-
-.about .row .box-container .box p{
-    font-size: 1rem;
-    color: var(--light-color);
-    padding: 2rem 0;
-}
-
-.about .row .content{
-    flex: 1 1 40rem;
-}
-
-.about .row .content h3{
-    margin-top: 1rem;
-    font-size: 1.25rem;
-    color: var(--black);
-    line-height: 1.8;
-}
-
-.about .row .content h3 span{
-    color: var(--purple);
-}
-
-.about .row .content p{
-    font-size: 1rem;
-    color: var(--black);
-    line-height: 1.8;
-}
-
-.about .row:nth-child(3){
-    padding-top: 2rem;
-}
-
-.about .row .box-skills{
     width: 100%;
     display: flex;
     border-radius: 1rem;
-    box-shadow: var(--box-shadow);
+    box-shadow: var(--box-shadow);    
+}
+.about .skills .content h3{
+    margin-top: 1rem;
+    font-size: 1.25rem;
+    color: var(--black);
+}
+.about .skills .content h3 span{
+    color: var(--purple);
 }
 
-.about .row .progress{
+.about .skills .content p{
+    font-size: 1rem;
+    color: var(--black);
+    line-height: 1.8;
+    text-align: justify;
+}
+
+.about .skills:nth-child(3){
+    padding-top: 2rem;
+}
+
+
+.about .skills .progression{
     flex: 1 1 25rem;
 }
 
-.about .row .progress h3 {
+.about .skills .progression h3 {
     color: var(--black);
     font-weight: normal;
     font-size: 1rem;
@@ -358,70 +333,162 @@ section{
     font-weight: 500;
 }
 
-.about .row .progress .bar{
+.about .skills .progression .bar{
     box-shadow: var(--box-shadow);
     border-radius: .5rem;
-    height: 0.7rem;
+    height: 1.5rem;
     padding: .5rem;
     margin:  2rem ;
 }
 
-.about .row .progress .bar span{
+.about .skills .box-skills .progression .bar span{
     display: block;
     min-height: 100%;
     background: var(--green);
     border-radius: 5rem;
 }
 
-.about .row .progress .bar-1-1 span{
-    width: 90%;
+.about .skills .progression .bar-1-1 span{
+    width: 95%;
     animation: load1 2s normal forwards;
 }
-.about .row .progress .bar-1-2 span{
-    width: 70%;
+.about .skills .progression .bar-1-2 span{
+    width: 85%;
       animation: load2 2s normal forwards;
 }
-.about .row .progress .bar-1-3 span{
-    width: 80%;
+.about .skills .progression .bar-1-3 span{
+    width: 65%;
       animation: load3 2s normal forwards;
 }
-.about .row .progress .bar-2-1 span{
-    width: 51%;
+.about .skills .progression .bar-1-4 span{
+    width: 80%;
       animation: load4 2s normal forwards;
 }
-.about .row .progress .bar-2-2 span{
-    width: 60%;
+.about .skills .progression .bar-1-5 span{
+    width: 55%;
       animation: load5 2s normal forwards;
 }
-.about .row .progress .bar-2-3 span{
-    width: 55%;
+
+.about .skills .progression .bar-2-1 span{
+    width: 80%;
       animation: load6 2s normal forwards;
+}
+.about .skills .progression .bar-2-2 span{
+    width: 90%;
+      animation: load7 2s normal forwards;
+}
+.about .skills .progression .bar-2-3 span{
+    width: 55%;
+      animation: load8 2s normal forwards;
+}
+.about .skills .progression .bar-2-4 span{
+    width: 80%;
+      animation: load9 2s normal forwards;
+}
+.about .skills .progression .bar-2-5 span{
+    width: 55%;
+      animation: load10 2s normal forwards;
 }
 
 @keyframes load1 {
     0% { width: 0; }
-    90% { width: 90%; }
+    95% { width: 95%; }
   }
 @keyframes load2 {
     0% { width: 0; }
-    70% { width: 70%; }
+    85% { width: 85%; }
   }
 @keyframes load3 {
     0% { width: 0; }
-    80% { width: 80%; }
+    65% { width: 65%; }
   }
 @keyframes load4 {
     0% { width: 0; }
-    51% { width: 51%; }
+    80% { width: 80%; }
   }
 @keyframes load5 {
     0% { width: 0; }
-    60% { width: 60%; }
+    55% { width: 55%; }
   }
 @keyframes load6 {
     0% { width: 0; }
+    80% { width: 80%; }
+  }
+@keyframes load7 {
+    0% { width: 0; }
+    90% { width: 90%; }
+  }
+@keyframes load8 {
+    0% { width: 0; }
     55% { width: 55%; }
   }
+@keyframes load9 {
+    0% { width: 0; }
+    80% { width: 80%; }
+  }
+@keyframes load10 {
+    0% { width: 0; }
+    55% { width: 55%; }
+  }
+
+.about .hobbies{
+    position: relative;
+    top: 2rem;
+    border-radius: .5rem;
+    box-shadow: var(--box-shadow);
+    padding: 1rem;
+}
+.about .hobbies-items{
+    display: flex;
+    justify-content: space-around;
+    margin: .5em;
+}
+
+.about .hobbies h3{
+    margin-top: 1rem;
+    font-size: 1.25rem;
+    color: var(--light-color);
+    text-align: center;
+}
+
+.about .hobbies .hobbies-items i{
+    text-align: center;
+    border-radius: 50%;
+    box-shadow: var(--box-shadow);
+    color: var(--black);
+    margin-top: 1em;
+    margin-bottom: 1em;
+    height: 4rem;
+    width: 4rem;
+    line-height: 4rem;
+    font-size: 2rem;
+    text-decoration: none;
+}
+.about .hobbies .hobbies-items h4{
+    color: var(--light-color);
+    font-size: 1rem;
+}
+
+.music, .judo, .jeux-video, .art{
+    text-align: center;
+}
+
+.about .hobbies .hobbies-items .fa-music:hover{
+    color: rgb(34, 136, 219);
+    box-shadow: var(--box-shadow-inset);
+}
+.about .hobbies .hobbies-items .fa-dumbbell:hover{
+    color: rgb(212, 58, 58);
+    box-shadow: var(--box-shadow-inset);
+}
+.about .hobbies .hobbies-items .fa-gamepad:hover{
+    color: rgb(226, 185, 0);
+    box-shadow: var(--box-shadow-inset);
+}
+.about .hobbies .hobbies-items .fa-paint-brush:hover{
+    color: rgb(0, 180, 45);
+    box-shadow: var(--box-shadow-inset);
+}
 
 
 
@@ -521,20 +588,46 @@ section{
     transform: scale(0);
 }
 
+#symfony{
+    width: 7em;
+}
+#twig{
+    width: 7em;
+}
+#figma{
+    width: 10em;
+}
+#wordpress{
+    width: 6em;
+}
+#elementor{
+    width: 3.5em;
+}
+
 .portfolio .box-container .box:hover .content{
     transform: scale(1);
     background: linear-gradient(rgb(107, 42, 182), rgb(12, 138, 211));
-    opacity: 0.8;
+    opacity: 1;
 }
 
-.portfolio .box-container .box .content h3{
+.portfolio .box-container .box .content h3 {
     font-size: 2rem;
     color: var(--black);
     text-transform: uppercase;
     transform: translateY(-5rem);
-    transition-delay: .3s;
-
+    transition-delay: .4s;
+    cursor:grab;
 }
+.portfolio .box-container .box .content h3 a{
+    color: var(--black);
+}
+.portfolio .box-container .box .content h3 a:hover{
+    color: #F4A261;
+}
+.portfolio .box-container .box .content h3:hover{
+    transform: translateY(2rem);
+}
+
 
 .portfolio .box-container .box:hover .content h3{ 
     transform: translateY(0rem);
@@ -558,43 +651,69 @@ section{
 }
 
 .contact .row .contentCarte {
-    box-shadow: var(--box-shadow);
-    border-radius: 1rem;
-}
-
-.btn-submit:hover{
-    color: var(--purple);
     box-shadow: var(--box-shadow-inset);
-}
- 
-.contact .row .content{
-    padding: 5rem 5rem;
-    box-shadow: var(--box-shadow);
     border-radius: 1rem;
+    padding: 1.5em;
+    margin: 1.5em;
 }
 
-.contact .row .content .icons h3{
-    padding: 1rem 0;
-    font-size: 1rem;
-    color: var(--purple);
+.contact .content{
+    position: relative;
+    top: 2rem;
+    border-radius: .5rem;
+    box-shadow: var(--box-shadow);
+    padding: 1rem;
+    box-shadow: var(--box-shadow);
+    margin-bottom: 3em;
+}
+.contact .infos-contact{
+    display: flex;
+    justify-content: space-around;
+    /* margin: .5em; */
 }
 
-.contact .row .content .icons h3 i{
-    padding-right: .5rem;
-
-}    
-
-.contact .row .content .icons p{
-    font-size: 1rem;
+.contact .content h3{
+    margin-top: 1rem;
+    font-size: 1.5rem;
+    color: var(--black);
+    text-align: center;
+}
+.contact .content p{
+    margin-top: 1rem;
+    font-size: .9rem;
+    text-align: center;
     color: var(--light-color);
-}
 
-.contact .row .content .icons p a{
+}
+.contact .content p a{
+    text-decoration: none;
     color: var(--light-color);
+
 }
 
-.contact .row .content .icons p a:hover{
-    color: var(--purple);
+.contact .content .infos-contact i{
+    text-align: center;
+    border-radius: 50%;
+    box-shadow: var(--box-shadow);
+    color: var(--light-color);
+    margin-top: 1em;
+    margin-bottom: 1em;
+    height: 4rem;
+    width: 4rem;
+    line-height: 4rem;
+    font-size: 2rem;
+    text-decoration: none;
+}
+.contact .content .infos-contact i:hover{
+    box-shadow: var(--box-shadow-inset);
+    color: var(--black);
+}
+.contact .content .infos-contact h4{
+    color: var(--black);
+    font-size: 1rem;
+}
+.icons{
+    text-align: center;
 }
 
 .credits {
@@ -605,16 +724,15 @@ section{
     color: var(--black);
     padding: 0.5rem;
 }
-
 .credits span{
     color: var(--purple);
 }
 
-.contact .row .contentCarte {
-    box-shadow: var(--box-shadow);
-    border-radius: 1rem;
-    width: 100%;
-}
+
+
+
+
+
 
 
 
@@ -634,10 +752,20 @@ section{
         padding-left: 0;
     }
 
+    .heading{
+        margin-bottom: 1em;
+    }
+
+    section {
+        min-height: 100vh;
+        padding: 0 2rem;
+        margin: 2em;
+    }
+
     .header .user img{
-        margin-top: 1.25em;
-        height: 18rem;
-        width: 18rem;
+        margin-top: 4em;
+        height: 17rem;
+        width: 17rem;
     }
 
     .header .user h3{
@@ -648,9 +776,9 @@ section{
         font-size: 1.75rem;
     }
 
-    .header .navbar a{
+    .header .menu a{
         display: block;
-        margin: 1.5rem 0;
+        margin: 3rem 0;
         padding: .7rem;
         border-radius: 5rem;
         font-size: 2rem;
@@ -675,77 +803,161 @@ section{
 
     /* PAGE A PORPOS */
 
-    .about .row .content h3 {
+    .about .skills .content h3 {
         margin-top: 0rem;
-        font-size: 2rem;
+        font-size: 2.5rem;
         color: var(--black);
         line-height: 3;
     }
 
-    .about .row .content p {
+    .about .skills .content p {
         font-size: 1.8rem;
-        line-height: 2;
+        line-height: 2.6;
     }
 
-    .contactMe {
-        font-size: 1.25rem;
+    .about .skills .progression h3 {
+        font-size: 1.8rem;
+        margin: 2.5rem;
     }
 
-    .about .row .progress h3 {
-        font-size: 2rem;
-    }
-
-    .about .row .progress .bar {
-        height: 1rem;
+    .about .skills .progression .bar {
+        height: 1.75rem;
         padding: 0.5rem;
         margin: 2rem;
     }
-    .about .row {
-        margin-bottom: 2rem;
+    .about .skills {
+        margin-bottom: 3em;
     }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    .contact form {
+    .about .hobbies{
+        position: relative;
+        top: 2rem;
+        border-radius: .5rem;
         box-shadow: var(--box-shadow);
+        padding: 1rem;
+    }
+    .about .hobbies-items{
+        display: flex;
+        justify-content: space-around;
+        margin: .5em;
+    }
     
-   }
-   
-   .contact form .box{
+    .about .hobbies h3{
+        margin-top: 1rem;
+        font-size: 2rem;
+        color: var(--light-color);
+        text-align: center;
+    }
+
+    .about .hobbies .hobbies-items i{
+        margin-top: 1.5em;
+        margin-bottom: 1em;
+        height: 6rem;
+        width: 6rem;
+        line-height: 6rem;
+        font-size: 2.5rem;
+        text-decoration: none;
+    }
+    .about .hobbies .hobbies-items h4{
+        color: var(--light-color);
+        font-size: 1.8rem;
+    }
+    
+    
+
+
+
+
+
+
+    .cntc{
+        height: 100vh;
+    }
+    .contact .row {
+         display: flex;
+         /* padding-top: 5rem; */
+         margin: auto 0;
+         /* padding-left: 5em; */
+    }
+    
+    .contact .row .contentCarte {
+        box-shadow: var(--box-shadow-inset);
+        border-radius: 1rem;
+        padding: 1.5em;
+        margin: 1.5em;
+    }
+    
+    .contact .content{
+        position: relative;
+        top: 2rem;
+        border-radius: .5rem;
         box-shadow: var(--box-shadow);
-
-   }
-
-   .contact .row {
-    display: flow-root;
-    justify-content: space-between;
-    padding-top: 2rem;
-   }
-
-   .contact .row .content .icons h3 {
-    padding: 1rem 0;
-    font-size: 2rem;
-    color: var(--purple);
+        padding: 1rem;
+        box-shadow: var(--box-shadow);
+        margin-bottom: 3em;
+    }
+    .contact .infos-contact{
+        display: flex;
+        justify-content: space-around;
+        margin: .5em;
+    }
+    
+    .contact .content h3{
+        margin-top: 1rem;
+        font-size: 1.5rem;
+        color: var(--black);
+        text-align: center;
+    }
+    .contact .content p{
+        margin-top: 1rem;
+        font-size: .9rem;
+        text-align: center;
+        color: var(--light-color);
+    
+    }
+    .contact .content p a{
+        text-decoration: none;
+        color: var(--light-color);
+    
+    }
+    
+    .contact .content .infos-contact i{
+        text-align: center;
+        border-radius: 50%;
+        box-shadow: var(--box-shadow);
+        color: var(--light-color);
+        margin-top: 1em;
+        margin-bottom: 1em;
+        height: 4rem;
+        width: 4rem;
+        line-height: 4rem;
+        font-size: 2rem;
+        text-decoration: none;
+    }
+    .contact .content .infos-contact i:hover{
+        box-shadow: var(--box-shadow-inset);
+        color: var(--black);
+    }
+    .contact .content .infos-contact h4{
+        color: var(--black);
+        font-size: 1rem;
+    }
+    .icons{
+        text-align: center;
+    }
+    
+    .credits {
+        font-size: .7rem;
+        text-align: center;
+        margin-top: 8rem;
+        border-top: var(--border);
+        color: var(--black);
+        padding: 0.5rem;
+    }
+    .credits span{
+        color: var(--purple);
     }
 
-    .contact .row .content .icons p{
-        font-size: 1.75rem;
-    }
 
 }
 
@@ -760,7 +972,7 @@ section{
     }
 
     .header{
-        width: 91%;
+        width: 100%;
         border-right: 0;
     }
 
@@ -768,7 +980,7 @@ section{
         margin-top: 1.25em;
         height: 26rem;
         width: 26rem;
-}
+    }
 
     .header .user h3{
         font-size: 3.5rem;
@@ -778,7 +990,7 @@ section{
         font-size: 2.5rem;
     }
 
-    .header .navbar a{
+    .header .menu a{
         display: block;
         margin: 1.5rem 0;
         padding: .7rem;
@@ -786,22 +998,37 @@ section{
         font-size: 2.25rem;
     }
 
+    section {
+        min-height: 100vh;
+        padding: 0 2rem;
+        margin: 2em;
+    }
+
+
+
+
+
     /* PAGE A HOME */
     .home .content h3 {
         font-size: 3.5rem;
     }
 
+
+
+
+
+
     /* PAGE A PORPOS */
     
-    .about .row .content h3 {
+    .about .skills .content h3 {
         margin-top: 0rem;
-        font-size: 2rem;
+        font-size: 1.75rem;
         color: var(--black);
         line-height: 3;
     }
     
-    .about .row .content p {
-        font-size: 1.6rem;
+    .about .skills .content p {
+        font-size: 1.4rem;
         line-height: 2;
     }
     
@@ -809,17 +1036,39 @@ section{
         font-size: 1.25rem;
     }
     
-    .about .row .progress h3 {
-        font-size: 1.5rem;
+    .about .skills .progression h3 {
+        font-size: 1.4rem;
     }
     
-    .about .row .progress .bar {
-        height: 0.7rem;
+    .about .skills .progression .bar {
+        height: 1.5rem;
         padding: 0.5rem;
         margin: 1rem;
     }
-    .about .row {
+    .about .skills .box-skills {
         margin-bottom: 2rem;
+        display: flex;
+        flex-direction: column;
+    }
+    .about .skills .box-skills .progression{
+        display: flex;
+       flex-direction: column;
+       padding: 0 2em;
+    }
+
+    .about .hobbies h3{
+        font-size: 1.75rem;
+    }
+    .about .hobbies-items {
+        display: flex;
+        margin: 0.5em;
+        flex-direction: row;
+        flex-direction: column;
+    }
+
+    .about .hobbies .hobbies-items h4{
+        color: var(--light-color);
+        font-size: 1.4rem;
     }
     
     
@@ -854,12 +1103,16 @@ section{
 
 
 /* PAGE contact */
-   .contact .row {
+    .contact .infos-contact{
         display: flex;
-        flex-wrap: wrap;
-        width: 100%;
-    
+        flex-direction: column;
+        margin: .5em;
     }
+
+    .contact .row .contentCarte {
+        margin: 0;
+    }
+
 
     .contact .row .content {
         width: 100%;
@@ -867,6 +1120,7 @@ section{
 
     .contentCarte{
         width: 100%;
+        justify-content: center;
     }
 
 

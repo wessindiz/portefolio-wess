@@ -4,8 +4,6 @@
         <div class="content">
             <h3>Wesley ROSEMAIN</h3>
             <p>Développeur web</p>
-
-            
         </div>
 
         <div class="share">

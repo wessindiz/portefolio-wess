@@ -66,17 +66,17 @@ export default {
     height: 530px;
     margin-left: auto;
     margin-right: auto;
-    margin: 0.8em; 
+    margin: auto; 
     border-radius: 1rem;
 }
 
 @media(max-width:1024px){
   #mapContainer {
     width : 100%;
-    height: 500px;
+    height: 300px;
     margin-left: auto;
     margin-right: auto;
-    margin: 0.8em; 
+    margin: auto; 
     border-radius: 1rem;
   }
 }
@@ -85,7 +85,7 @@ export default {
 @media(max-width:450px){
   #mapContainer {
     width : 100%;
-    height: 350px;
+    height: 300px;
     margin-left: auto;
     margin-right: auto;
     /* margin: 0.8em;  */
