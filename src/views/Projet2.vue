@@ -118,5 +118,9 @@ p {
     flex-direction: column;
     margin: 5em;
   }
+
+  p {
+    font-size: 1.2em;
+  }
 }
 </style>

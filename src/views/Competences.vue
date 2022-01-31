@@ -54,7 +54,7 @@
         <i class="fab fa-wordpress"></i>
         <h3>wordpress</h3>
         <p>
-          je mène à bien la mise en ligne d’un site WordPress à partir d'un thème choisi que je modifie et 
+          Je mène à bien la mise en ligne d’un site WordPress à partir d'un thème choisi que je modifie et 
           personnalise en installant les extensions et les plugins nécessaires.
         </p>
       </div>
