@@ -6,12 +6,15 @@
       <h3><span>24 Carats Musique</span> <i class="far fa-gem"></i></h3>
       <p>
         Étant passionné de musique, il me tenait à coeur de réaliser mon projet
-        sur ce thème. <br />24 Carats Music est le nom de mon label de musique,
-        et également du studio mis à disposition de tous.<br />
-        <!-- Les utilisateurs qui le souhaitent pourront bénéficier des différents studios, et pourront réserver leurs sessions via le site. -->
+        sur ce thème.<br/> 24 Carats Music est le nom de mon label de musique,
+        et également du studio mis à disposition de tous.<br/>Mon application vise à informer, présenter et faire découvrir le label 24 Carats Music Record au 
+        grand public. Les utilisateurs qui le souhaitent pourront bénéficier des différents studios, et 
+        pourront réserver leurs sessions via le site.<br><br>
+        Pour ce projet, j'ai réalisé une charte graphique, un cahier des charges, des diagrammes UML, le front-end et le back-end.
+
       </p>
 
-      <slider />
+      <slider-1 />
 
       <div class="techno">
 
@@ -20,22 +23,22 @@
         <div class="techno-items">
 
           <div class="item">
-            <img src="@/assets/symfony.png" alt="logo Symfony" />
+            <img src="@/assets/Projets/Projet1/symfony.png" alt="logo Symfony" />
             <h4>Symfony</h4>
           </div>
 
           <div class="item">
-            <img src="@/assets/twig.png" alt="logo Twig" />
+            <img src="@/assets/Projets/Projet1/twig.png" alt="logo Twig" />
             <h4>Twig</h4>
           </div>
 
           <div class="item">
-            <img src="@/assets/bootstrap.png" alt=" logo Bootstrap" />
+            <img src="@/assets/Projets/Projet1/bootstrap.png" alt=" logo Bootstrap" />
             <h4>Bootstrap</h4>
           </div>
 
           <div class="item">
-            <img src="@/assets/phpmyadmin.png" alt="logo phpMyAdmin" />
+            <img src="@/assets/Projets/Projet1/phpmyadmin.png" alt="logo phpMyAdmin" />
             <h4>PhpMyAdmin</h4>
           </div>
         </div>
@@ -48,11 +51,11 @@
 
 
 <script>
-import Slider from "../components/Slider.vue";
+import Slider1 from "../components/Slider1.vue";
 
 export default {
   components: {
-    Slider,
+    Slider1,
   },
 };
 </script>
@@ -61,7 +64,7 @@ export default {
 <style scoped>
 
 h3 {
-  color: #74c69d;
+  color:var(--diamant);
   font-weight: normal;
   margin-top: 1rem;
   font-size: 1.75rem;
@@ -113,9 +116,8 @@ p {
     margin-bottom: 1em;
     height: 8rem;
     width: 8rem;
-    line-height: 8rem;
+    padding:1rem;
     font-size: 1rem;
-    text-decoration: none;
 }
 .techno .techno-items h4{
     color: var(--light-color);

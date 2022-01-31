@@ -15,7 +15,7 @@
          <div class="icons">
             <i class="fas fa-mobile-alt"></i>
             <h4>Téléphone</h4>
-            <p><a href="tel:+33663484450>">+33663484450</a></p>
+            <p><a href="tel:+33663484450>"> 06.63.48.44.50 </a></p>
           </div>
 
           <div class="icons">
@@ -29,7 +29,7 @@
           <div class="icons">
             <i class="far fa-paper-plane"></i>
             <h4>Email</h4>
-            <!-- <p><a href="mailto:wessrosemain@hotmail.fr">wessrosemain@hotmail.fr</a></p> -->
+            <p><a href="mailto:wessrosemain@hotmail.fr">wessrosemain@hotmail.fr</a></p>
           </div>
 
           </div>

@@ -1,17 +1,19 @@
 <template>
   <section class="projet1" id="projet1">
-    <h1 class="heading"><span>Projet</span>01</h1>
+    <h1 class="heading"><span>Projet</span>03</h1>
 
     <div class="box-container">
-      <h3><span>Beard&Coffee</span> <img src="@/assets/Projets/Projet3/lame.png" class="filter-gold"></h3>
+      <h3>Beard&Coffee<img src="@/assets/Projets/Projet3/lame.png" class="filter-gold"></h3>
       <p>
-        Étant passionné de musique, il me tenait à coeur de réaliser mon projet
-        sur ce thème. <br />24 Carats Music est le nom de mon label de musique,
-        et également du studio mis à disposition de tous.<br />
-        <!-- Les utilisateurs qui le souhaitent pourront bénéficier des différents studios, et pourront réserver leurs sessions via le site. -->
+        Beard&Coffee est avant toutes choses, un concept.<br>
+        Il s'agit d'un barbershop qui rempli sa fonction principale de coiffeur,&nbsp;
+        mais qui avec son coffee space, offre la possibilité aux clients de découvrir les meilleurs thés et cafés provenants
+        de différents horizons (Honduras, Éthiopie, Indonésie, Jamaïque, Japon, etc... ).<br><br>
+        Je développe actuellement ce site en Wordpress avec Elementor (pour la mise en page et la mise en forme), et
+        WooCommerce (pour la création et la gestion des produits du shop).
       </p>
 
-      <slider />
+      <slider-3 />
 
       <div class="techno">
 
@@ -20,24 +22,20 @@
         <div class="techno-items">
 
           <div class="item">
-            <img src="@/assets/symfony.png" alt="logo Symfony" />
-            <h4>Symfony</h4>
+            <img src="../assets/Projets/Projet3/wordpress.png" alt="logo Wordpress" />
+            <h4>Wordpress</h4>
           </div>
 
           <div class="item">
-            <img src="@/assets/twig.png" alt="logo Twig" />
-            <h4>Twig</h4>
+            <img src="../assets/Projets/Projet3/elementor.png" alt="logo Elementor" />
+            <h4>Elementor</h4>
           </div>
 
           <div class="item">
-            <img src="@/assets/bootstrap.png" alt=" logo Bootstrap" />
-            <h4>Bootstrap</h4>
+            <img src="../assets/Projets/Projet3/woo.png" alt="logo WooCommerce" />
+            <h4>WooCommerce</h4>
           </div>
 
-          <div class="item">
-            <img src="@/assets/phpmyadmin.png" alt="logo phpMyAdmin" />
-            <h4>PhpMyAdmin</h4>
-          </div>
         </div>
       </div>
     </div>
@@ -48,11 +46,11 @@
 
 
 <script>
-import Slider from "../components/Slider.vue";
+import Slider3 from "../components/Slider3.vue";
 
 export default {
   components: {
-    Slider,
+    Slider3,
   },
 };
 </script>
@@ -71,16 +69,13 @@ h3 {
   font-size: 1.75rem;
 }
 
-h3 span{
-  color: brown;
-  font-weight: normal;
-  margin-top: 1rem;
-  font-size: 1.75rem;
+h3 img{
+    font-size: 1.25rem;
 }
 
 .filter-gold{
     width: 1.75em;
-    filter: invert(84%) sepia(45%) saturate(6886%) hue-rotate(7deg) brightness(100%) contrast(107%);
+    filter: invert(38%) sepia(73%) saturate(505%) hue-rotate(4deg) brightness(96%) contrast(90%);;
 }
 
 p {
@@ -124,10 +119,11 @@ p {
     margin-bottom: 1em;
     height: 8rem;
     width: 8rem;
-    line-height: 8rem;
+    padding: 1rem;
     font-size: 1rem;
     text-decoration: none;
 }
+
 .techno .techno-items h4{
     color: var(--light-color);
     font-size: 1rem;

@@ -15,14 +15,14 @@
              <div class="box">
                  <img src="../assets/Sugarbaby.png"  alt="">
                  <div class="content">
-                     <h3><a href="/Projet2">Projet 02</a></h3>
+                     <h3><router-link to="/Projet2">Projet 02</router-link></h3>
                  </div>
              </div>
 
              <div class="box">
                  <img src="../assets/b&c.png" alt="">
                  <div class="content">
-                     <h3><a href="/Projet3">Projet 03</a></h3>
+                     <h3><router-link to="/Projet3">Projet 03</router-link></h3>
                  </div>
              </div>
          </div>

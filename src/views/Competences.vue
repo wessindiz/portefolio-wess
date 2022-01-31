@@ -8,15 +8,18 @@
         <i class="fas fa-code"></i>
         <h3>web design</h3>
         <p>
-          Le graphisme est une discipline qui consiste à créer, choisir et utiliser des éléments graphiques (dessins, caractères typographiques, photos, couleurs, etc.) pour élaborer un objet de communication et/ou de culture.</p>
+          Je mets en forme et j'organise les informations dans les pages d'un site 
+          en adaptant au mieux les contenus (architecture du site, arborescence des pages, 
+          navigation interne, ergonomie).</p>
       </div>
 
       <div class="box">
         <i class="fas fa-paint-brush"></i>
-        <h3>graphic design</h3>
+        <h3>graphic design (UI/UX)</h3>
         <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas autem
-          eligendi accusamus ducimus, vel rerum in sunt.
+          Créatif et aimant m'inspirer, j' exprime des idées 
+          visuellement en faisant des créations graphiques avec plusieurs éléments
+          (typographies, couleurs, formes, et images).
         </p>
       </div>
 
@@ -24,8 +27,8 @@
         <i class="fas fa-mobile"></i>
         <h3>responsive design</h3>
         <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas autem
-          eligendi accusamus ducimus, vel rerum in sunt.
+          Je modifie et adapte le contenu d'un site afin qu'il soit accessible 
+          et adaptable à tous les écrans: (smartphones, tablettes, ordinateurs de bureau, etc.)
         </p>
       </div>
 
@@ -33,8 +36,8 @@
         <i class="fas fa-bullhorn"></i>
         <h3>Développeur back-end</h3>
         <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas autem
-          eligendi accusamus ducimus, vel rerum in sunt.
+          Je m’occupe de la partie back-office des sites et applications web.
+          Je développe et je gère l'évolution de leurs fonctionnalités techniques.
         </p>
       </div>
 
@@ -42,8 +45,8 @@
         <i class="fas fa-search-dollar"></i>
         <h3>Concepteur de BDD</h3>
         <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas autem
-          eligendi accusamus ducimus, vel rerum in sunt.
+          Je modélise des bases de données avec le langage UML, je les programme en langage SQL, je sais y insérer
+          des données en m'assurant de la sécurité de celles-ci.
         </p>
       </div>
 
@@ -51,8 +54,8 @@
         <i class="fab fa-wordpress"></i>
         <h3>wordpress</h3>
         <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas autem
-          eligendi accusamus ducimus, vel rerum in sunt.
+          je mène à bien la mise en ligne d’un site WordPress à partir d'un thème choisi que je modifie et 
+          personnalise en installant les extensions et les plugins nécessaires.
         </p>
       </div>
 
