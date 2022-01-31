@@ -29,22 +29,22 @@ export default {
       
       if ( this.dark ) {
         L.tileLayer(
-        'https://tiles.stadiamaps.com/tiles/alidade_smooth/{z}/{x}/{y}{r}.png', // liens pour choisir des cartes "https://wiki.openstreetmap.org/wiki/Tiles#Servers" voire "https://leaflet-extras.github.io/leaflet-providers/preview/"
+        'https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', // liens pour choisir des cartes "https://wiki.openstreetmap.org/wiki/Tiles#Servers" voire "https://leaflet-extras.github.io/leaflet-providers/preview/"
         {
           attribution:
             '&copy; OpenStreetMap France | &copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors',
-          maxZoom: 20,
+          maxZoom: 18,
         }
       ).addTo(mapDiv);
       }
       
       else{
         L.tileLayer(
-        'https://tiles.stadiamaps.com/tiles/alidade_smooth_dark/{z}/{x}/{y}{r}.png', // liens pour choisir des cartes "https://wiki.openstreetmap.org/wiki/Tiles#Servers" voire "https://leaflet-extras.github.io/leaflet-providers/preview/"
+        'https://{s}.tile.openstreetmap.de/tiles/osmde/{z}/{x}/{y}.png', // liens pour choisir des cartes "https://wiki.openstreetmap.org/wiki/Tiles#Servers" voire "https://leaflet-extras.github.io/leaflet-providers/preview/"
         {
           attribution:
             '&copy; OpenStreetMap France | &copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors',
-          maxZoom: 20,
+          maxZoom: 18,
         }
       ).addTo(mapDiv);
       }
