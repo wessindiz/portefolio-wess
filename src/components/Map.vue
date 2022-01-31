@@ -29,11 +29,11 @@ export default {
       
       if ( this.dark ) {
         L.tileLayer(
-        'https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', // liens pour choisir des cartes "https://wiki.openstreetmap.org/wiki/Tiles#Servers" voire "https://leaflet-extras.github.io/leaflet-providers/preview/"
+        'https://tiles.stadiamaps.com/tiles/alidade_smooth/{z}/{x}/{y}{r}.png', // liens pour choisir des cartes "https://wiki.openstreetmap.org/wiki/Tiles#Servers" voire "https://leaflet-extras.github.io/leaflet-providers/preview/"
         {
           attribution:
             '&copy; OpenStreetMap France | &copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors',
-          maxZoom: 14,
+          maxZoom: 20,
         }
       ).addTo(mapDiv);
       }
@@ -44,7 +44,7 @@ export default {
         {
           attribution:
             '&copy; OpenStreetMap France | &copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors',
-          maxZoom: 14,
+          maxZoom: 20,
         }
       ).addTo(mapDiv);
       }
