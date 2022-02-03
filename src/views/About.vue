@@ -25,35 +25,35 @@
           <h3>HTML <span class="progression-bar-striped">95%</span></h3>
           <div class="bar bar-1-1"><span></span></div>
           
-          <h3>Figma <span>85%</span></h3>
+          <h3>Figma <span>90%</span></h3>
           <div class="bar bar-1-2"><span></span></div>
 
-          <h3>Javascript <span>65%</span></h3>
+          <h3>Javascript <span>80%</span></h3>
           <div class="bar bar-1-3"><span></span></div>
 
           <h3>Wordpress <span>80%</span></h3>
           <div class="bar bar-1-4"><span></span></div>
 
-          <h3>PHP/Symfony <span>55%</span></h3>
+          <h3>PHP/Symfony <span>70%</span></h3>
           <div class="bar bar-1-5"><span></span></div>
         </div>
         
 
         <div class="progression">
 
-          <h3>CSS <span>80%</span></h3>
+          <h3>CSS <span>90%</span></h3>
           <div class="bar bar-2-1"><span></span></div>
 
-          <h3>Bootstrap <span class="progression-bar-striped">90%</span></h3>
+          <h3>Bootstrap <span class="progression-bar-striped">85%</span></h3>
           <div class="bar bar-2-2"><span></span></div>
           
-          <h3>Vue.js <span>55%</span></h3>
+          <h3>Vue.js <span>70%</span></h3>
           <div class="bar bar-2-3"><span></span></div>
 
-          <h3>Elementor <span>80%</span></h3>
+          <h3>Elementor <span>75%</span></h3>
           <div class="bar bar-2-4"><span></span></div>
 
-          <h3>MySQL <span>55%</span></h3>
+          <h3>MySQL <span>60%</span></h3>
           <div class="bar bar-2-5"><span></span></div>
           
         </div>
