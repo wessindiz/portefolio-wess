@@ -21,33 +21,37 @@
       <!-- Theme de l'app -->
       <div v-on:click="changeTheme()" :class="{ 'fa-sun':dark, 'fa-moon':!dark }"  id="theme-toggler" class="fas"></div>
 
-  </div>
+  </div> 
   <router-view :dark="dark" />
-</template>
+</template>   
 
 
 
 
 <script>
-
 export default {
   data(){
     return{
       menuOpen:false,
       dark: false,
+      img: '',
     }
   },
   
   methods:{ 
     changeTheme(){
       this.dark = !this.dark;
+      console.log(this.dark);
       let themeToggler = document.querySelector('#theme-toggler');
       if(themeToggler.classList.contains('fa-moon')){
         document.body.classList.add('active');
       }else if(themeToggler.classList.contains('fa-sun')){
         document.body.classList.remove('active');
       }
-    }
+    },
+    // slideToBottom(){
+    //   console.log('lala');
+    // }
   }
 }
 </script>
